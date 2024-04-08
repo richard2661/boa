@@ -1,0 +1,97 @@
+.gmail-wrapper {
+  color: #202124;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: grid;
+  place-items: self-start;
+}
+
+.gmail-wrapper .gmail-cont {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.gmail-cont .gmail-body {
+  height: auto;
+  padding: 24px 24px 36px;
+  min-height: calc(100vh - 48px);
+}
+
+.gmail-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 0 24px 14px;
+}
+
+.gmail-footer .gmail-lang {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.gmail-footer .gmail-lang svg {
+  font-size: 15px;
+}
+
+.gmail-links a {
+  color: #757575 !important;
+  padding: 6px 16px;
+  font-weight: 500px;
+}
+
+.gmail-links a:last-child {
+  padding-right: 0 !important;
+}
+
+.gmail-body .email-holder {
+  align-items: center;
+  border: 1px solid #dadce0;
+  color: #3c4043;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  max-width: 100%;
+  padding: 4.5px 5px;
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .gmail-wrapper {
+    place-items: center;
+  }
+
+  .gmail-footer {
+    height: 16.8px;
+    padding: 24px 0 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .gmail-wrapper .gmail-cont {
+    border: 1px solid #dadce0;
+  }
+
+  .gmail-cont .gmail-body {
+    min-height: 500px !important;
+    padding: 48px 40px 36px;
+  }
+}
